@@ -1,5 +1,5 @@
 header {
-  @include pa_ma($md $xl-2, none);
+  @include pa_ma($md, unset);
   position: sticky;
   box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
   background-color: $primary;

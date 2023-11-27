@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useEffect, useState } from 'react';
-import ReactPlayer from 'react-player';
 
 
 function Hero({headerHeight}) {
@@ -21,16 +20,23 @@ function Hero({headerHeight}) {
         hero.style.top =  '-' + headerHeightData + 'px'
     }
     
+    // const setHeroTop =  () => {
+    //     const header = document.querySelector('header.header');
+    //     const hero = document.querySelector('.hero');
+    //     const headerHeight = header.offsetHeight + 36;
+    //     hero.style.top =  '-' + headerHeight + 'px'
+    // }
+
     const showHeroHeading = () => {
         const hero = document.querySelector('.hero-heading')
         const hero2 = document.querySelector('.hero-heading-2')
         const hero3 = document.querySelector('.hero-heading-3')
         setTimeout(() => {
             hero.classList.add('show')
-        }, 500);   
+        }, 1000);   
         setTimeout(() => {
             hero2.classList.add('show')
-        }, 1000);   
+        }, 1500);   
         setTimeout(() => {
             hero3.classList.add('show')
         }, 2000);   
@@ -51,29 +57,22 @@ function Hero({headerHeight}) {
     return (
       <>
         <section className="hero" id='home'>
-            <ReactPlayer 
-            id="bgVid"
-            url='videos/bg.mp4'
-            playing
-            playsinline={true}
-            loop={true}
-            volume={null}
-            controls={null}
-            muted={true}/>
-            <audio controls autoPlay id='mungJungYan'>
+            <video autoPlay muted loop data-aos="fade">
+                <source src='videos/bg2.mp4' type='video/mp4'/>
+            </video>
+            {/* <audio controls autoPlay id='mungJungYan'>
                 <source src="music/mjyan.mp3" type="audio/mpeg" />
-            </audio>
+            </audio> */}
             <div className="container hero-container">
                 <h1 className='hero-heading'>
-                    <label htmlFor="">Thịnh</label>
+                    <label htmlFor="">Lam</label>
                 </h1>
                 <h1 className='hero-heading-2'>
-                    <label htmlFor="">&</label>
+                    <label htmlFor="">Bui</label>
                 </h1>
                 <h1 className='hero-heading-3'>
-                <label htmlFor="">Thảo</label>
+                    <label htmlFor="">Photographer & Editor</label>
                 </h1>
-                <p>Save The Date</p>
             </div>
         </section> 
       </>

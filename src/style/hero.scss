@@ -31,11 +31,18 @@
   }
 
   &-heading, &-heading-2, &-heading-3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 56px !important;
+    color: $white;
+    // text-transform: uppercase !important;
     opacity: 0;
     transition: all .8s ease-in-out;
     &.show {
       opacity: 1;
     }
+  }
+  &-heading-3 {
+    font-size: 26px !important;
   }
 
   audio {

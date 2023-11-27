@@ -50,9 +50,9 @@
   padding: $padding;
 }
 
-@mixin pa_ma($padding, $marign) {
+@mixin pa_ma($padding, $margin) {
   padding: $padding;
-  margin: $marign;
+  margin: $margin;
 }
 @mixin shadow($shadow) {
   box-shadow: $shadow;
