@@ -1,6 +1,6 @@
 import React from 'react';
 import Heading from '../../common/Heading';
-import BomImg from '../../assets/images/more/woman2.png';
+import BomImg from '../../assets/images/more/home.jpg';
 
 function CardMain(props) {
     return (

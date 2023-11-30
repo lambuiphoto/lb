@@ -26,15 +26,15 @@ function Hero({headerHeight}) {
         }, 2500);   
     }
 
-    // document.addEventListener('click', () => {
-    //     document.getElementById('sanFran').play()
-    // }, { once: true } )
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('sanFran').play()
+    }, { once: true } )
 
     useLayoutEffect(() => {
         showHeroHeading()
         setHeroTop()
         document.onreadystatechange = () => {
-            setHeroTop()
+            setHeroTop();
         }
     },[])
     

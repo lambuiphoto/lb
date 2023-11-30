@@ -1,5 +1,6 @@
 import React from 'react';
 import WomanImage from '../assets/images/more/woman1.png'
+import bomContactImg from '../assets/images/more/bomContact.jpg'
 import Heading from '../common/Heading';
 import { useForm } from "react-hook-form";
 
