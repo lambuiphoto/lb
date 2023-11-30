@@ -26,9 +26,9 @@ function Hero({headerHeight}) {
         }, 2500);   
     }
 
-    document.addEventListener('click', () => {
-        document.getElementById('sanFran').play()
-    }, { once: true } )
+    // document.addEventListener('click', () => {
+    //     document.getElementById('sanFran').play()
+    // }, { once: true } )
 
     useLayoutEffect(() => {
         showHeroHeading()
@@ -54,9 +54,9 @@ function Hero({headerHeight}) {
                 <h1 className='hero-heading-2'>
                     <label htmlFor="">Bui</label>
                 </h1>
-                <h1 className='hero-heading-3'>
-                    <label htmlFor="">What's up?</label>
-                </h1>
+                {/* <h1 className='hero-heading-3'> */}
+                    {/* <label htmlFor="">What's up?</label> */}
+                {/* </h1> */}
             </div>
         </section> 
       </>
