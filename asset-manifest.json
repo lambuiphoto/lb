@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/lb/static/css/main.380bf8dd.css",
-    "main.js": "/lb/static/js/main.2cff9256.js",
-    "static/media/woman1.png": "/lb/static/media/woman1.85d5b6e726b942f6d6ac.png",
-    "static/media/woman2.png": "/lb/static/media/woman2.0b567228cc502c6c819d.png",
-    "static/media/UVFAmplify.woff": "/lb/static/media/UVFAmplify.a243d75916ffdef2584e.woff",
-    "static/media/UVFAmplify.woff2": "/lb/static/media/UVFAmplify.a8afe1ba9a9c8922c995.woff2",
-    "static/media/icon.webp": "/lb/static/media/icon.0f2091c6fe6fb2d3b69d.webp",
-    "static/media/slick.svg": "/lb/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/lb/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/lb/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/lb/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/lb/index.html",
-    "main.380bf8dd.css.map": "/lb/static/css/main.380bf8dd.css.map",
-    "main.2cff9256.js.map": "/lb/static/js/main.2cff9256.js.map"
+    "main.css": "/static/css/main.a2be323f.css",
+    "main.js": "/static/js/main.4bb64788.js",
+    "static/media/woman1.png": "/static/media/woman1.85d5b6e726b942f6d6ac.png",
+    "static/media/bomContact.jpg": "/static/media/bomContact.a4a92b423d9a818c944e.jpg",
+    "static/media/home.jpg": "/static/media/home.970243fb43887692f645.jpg",
+    "static/media/UVFAmplify.woff": "/static/media/UVFAmplify.a243d75916ffdef2584e.woff",
+    "static/media/UVFAmplify.woff2": "/static/media/UVFAmplify.a8afe1ba9a9c8922c995.woff2",
+    "static/media/icon.webp": "/static/media/icon.0f2091c6fe6fb2d3b69d.webp",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.a2be323f.css.map": "/static/css/main.a2be323f.css.map",
+    "main.4bb64788.js.map": "/static/js/main.4bb64788.js.map"
   },
   "entrypoints": [
-    "static/css/main.380bf8dd.css",
-    "static/js/main.2cff9256.js"
+    "static/css/main.a2be323f.css",
+    "static/js/main.4bb64788.js"
   ]
 }
