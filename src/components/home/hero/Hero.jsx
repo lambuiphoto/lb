@@ -17,13 +17,13 @@ function Hero({headerHeight}) {
         const hero3 = document.querySelector('.hero-heading-3')
         setTimeout(() => {
             hero.classList.add('show')
-        }, 1200);   
+        }, 1000);   
         setTimeout(() => {
             hero2.classList.add('show')
-        }, 2200);   
+        }, 2000);   
         setTimeout(() => {
             hero3.classList.add('show')
-        }, 2000);   
+        }, 2500);   
     }
 
     document.addEventListener('click', () => {
