@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import $ from 'jquery'; 
-import logo from '../assets/images/icon.png';
-import { AiOutlineHeart, AiOutlineMenu, AiOutlineClose} from "react-icons/ai";
-import { navlist } from '../assets/data/data';
-import { Link } from 'react-router-dom';
+import logo from '../assets/images/icon.webp';
+import { useLocation } from 'react-router-dom';
 import { connect, useDispatch, useSelector } from 'react-redux';
+import Socials from '../home/Socials';
 
 function Header(props) {
     window.addEventListener('scroll', function (e) {
@@ -27,43 +26,27 @@ function Header(props) {
 
     })
 
-    const scrollOnClick = () => {
-        $(".home").click(() => {
-            $("html, body").animate(
-              {
-                scrollTop: $("#home").offset().top,
-              },
-              1000
-            );
-        });
-        $(".ourstory").click(() => {
-            $("html, body").animate(
-              {
-                scrollTop: $("#ourstory").offset().top - 200,
-              },
-              1000
-            );
-        });
-        $(".link.gallery").click(() => {
-            $("html, body").animate(
-              {
-                scrollTop: $("#gallery").offset().top,
-              },
-              1000
-            );
-        });
-        $(".location").click(() => {
-            $("html, body").animate(
-              {
-                scrollTop: $("#location").offset().top,
-              },
-              1000
-            );
-        });
-    };
-
     // set state for mobile menu
     const [mobile, setMobile] = useState(false);
+
+    function scrollToSection(ele, sectionId) {
+        $(ele).click(() => {
+            $("html, body").animate(
+              {
+                scrollTop: $(sectionId).offset().top,
+              },
+              1000
+            );
+            setMobile(false);
+        });
+    }
+
+    const scrollOnClick = () => {
+        scrollToSection(".link.home", "#home");
+        scrollToSection(".link.about", "#about");
+        scrollToSection(".link.gallery", "#storyslider");
+        scrollToSection(".link.contact", "#contact");
+    };
 
     useEffect(() => {
         scrollOnClick()
@@ -89,14 +72,18 @@ function Header(props) {
                                 <a href='#home' className='link home'>home</a>
                             </li>
                             <li>
-                                <a href='#ourstory' className='link ourstory'>chủ xị</a>
+                                <a href='#about' className='link about'>about</a>
                             </li>
                             <li>
-                                <a href='#gallery' className='link gallery'>ảnh</a>
+                                <a href='#storyslider' className='link gallery'>Gallery</a>
                             </li>
                             <li>
-                                <a href='#location' className='link location'>địa điểm</a>
+                                <a href='#contact' className='link contact'>contact</a>
                             </li>
+                            <li>
+                                <a href='#' target='_blank' rel="noreferrer" download>Download CV</a>
+                            </li>
+                            <Socials/>
                         </ul>
                     </div>
                 </nav>

@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 @mixin transition {
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 @function weight($weight-name) {
@@ -50,9 +50,9 @@
   padding: $padding;
 }
 
-@mixin pa_ma($padding, $marign) {
+@mixin pa_ma($padding, $margin) {
   padding: $padding;
-  margin: $marign;
+  margin: $margin;
 }
 @mixin shadow($shadow) {
   box-shadow: $shadow;

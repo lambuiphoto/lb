@@ -1,7 +1,7 @@
 {
-  "name": "weddd",
+  "name": "lambuiphoto",
   "version": "0.1.0",
-  "homepage": "https://timfung893.github.io/tt/",
+  "homepage": "https://lambuiphoto.github.io/lb",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
@@ -9,12 +9,17 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
-    "gh-pages": "^4.0.0",
+    "framer-motion": "^7.6.2",
     "jquery": "^3.6.1",
+    "masonic": "^3.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
     "react-icons": "^4.6.0",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-player": "^2.11.0",
     "react-redux": "^8.0.4",
+    "react-responsive-masonry": "^2.1.6",
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
@@ -48,5 +53,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "tailwindcss": "^3.3.5"
   }
 }

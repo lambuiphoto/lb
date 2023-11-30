@@ -1,32 +1,25 @@
 import React from 'react';
+import Heading from '../../common/Heading';
+import BomImg from '../../assets/images/more/woman2.png';
 
 function CardMain(props) {
     return (
         <>
-            <section className="cardmain card-section" id='ourstory' data-aos="fade">
-                <p className='card-story'>Sau 2 năm, 11 tháng, 27 ngày...</p>
-                <div className="container card-container">
-                    <div className="left">
-                        <img src="images/banner/thao.jpg" alt="" />
-                        <div className="name">
-                            <h2>Phương Thảo</h2>
-                            <p>2x tuổi (x đại học)</p>
-                            <p>Mê Vương Phi, Vương Gia Vệ</p>
-                            <p>Nhưng đồ ăn tới là mọi thứ mặc kệ</p>
-                        </div>
+            <section className="cardmain card-section" id='about' data-aos="fade">
+                <p className='card-story'>Just a guy with passion for photography</p>
+                <Heading title="About Me" />
+                <div className="section-bg"></div>
+                <div className="container card-container about-info ">
+                    <div className="about-cover" data-aos="fade-left">
+                        <img src={BomImg} alt="cover" />
                     </div>
-                    <div className="center">
-                        <img className='center-img' src="images/hero/fl-frame.jpg" alt="" />
-                        <p>Cuối cùng <br></br>cũng chốt kèo :)</p> 
-                    </div>
-                    <div className="right">
-                    <img src="images/banner/thinh2.jpg" alt="" />
-                        <div className="name">
-                            <h2>Trường Thịnh</h2>
-                            <p>2x tuổi (x đại học)</p>
-                            <p>Mê em</p>
-                            <p>Nhưng mê xe, mê game hơn cả keke</p>
-                        </div>
+                    <div
+                        className="about-info-detail" data-aos="fade-right">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus explicabo libero, voluptatibus temporibus, eveniet doloribus voluptates aliquam incidunt molestiae dignissimos! Voluptatibus, ipsa fugit quidem ad vel vero culpa natus.</p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fuga laudantium perspiciatis dicta nisi quam. Soluta ut quis maiores labore.</p>
+                        <br />
+                        {/* <a href='#works' className='about-info-button'>View my work</a> */}
                     </div>
                 </div>
             </section>
