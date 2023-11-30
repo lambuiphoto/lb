@@ -26,16 +26,19 @@ function Hero({headerHeight}) {
         // }, 2500);   
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('sanFran').play()
-    }, { once: true } )
-
     useLayoutEffect(() => {
+
         showHeroHeading()
         setHeroTop()
         document.onreadystatechange = () => {
             setHeroTop();
+            document.getElementById('sanFran').play()
         }
+        
+        // document.addEventListener('DOMContentLoaded', () => {
+            // document.getElementById('sanFran').play()
+        // }, { once: true } )
+
     },[])
     
     return (
