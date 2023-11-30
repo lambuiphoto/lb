@@ -3,7 +3,7 @@ import React from 'react';
 function Footer(props) {
     return (
         <footer>
-            <p>Thịnh & Thảo 2022</p>
+            <p>Lam Bui 2023</p>
         </footer>
     );
 }

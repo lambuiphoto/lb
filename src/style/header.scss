@@ -2,7 +2,7 @@ header {
   @include pa_ma($md, unset);
   position: sticky;
   box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
-  background-color: $primary;
+  background-color: $black;
   top: 0;
   opacity: 0;
   @include transition;
@@ -40,12 +40,13 @@ header {
           letter-spacing: 3px;
           font-size: 12px;
           &:hover {
-            padding: 15px;
+            padding: 10px;
             border-radius: 8px
           }
         }
       }
     }
+    
   }
   .right {
     @extend .container;

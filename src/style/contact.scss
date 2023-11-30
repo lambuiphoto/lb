@@ -1,0 +1,49 @@
+.contact-container {
+    h2, p {
+        text-align: left
+    }
+    @include flex(center, center, row);
+    input {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        padding-left: 0.75rem;
+        background-color: transparent;
+        border-bottom-width: 1px;
+        border-bottom: 1px solid rgba($color: white, $alpha: .5);
+        height: 60px;
+        color: wheat;
+        @include transition;
+        &:focus {
+            border-bottom: 1px solid rgba($color: white, $alpha: 1);
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        
+        .form-info-1 {
+            @include flex(center, space-between, row)
+        }
+    }
+    img {
+        border-radius: 20px;
+        width: 80%;
+    }
+    button {
+        margin-top: 20px;
+        padding: 16px 25px 16px 25px;
+        color: white;
+        text-align: left;
+        border: 1px solid transparent;
+        text-align: center;
+        width: 100px;
+        @include transition;
+        &:hover {
+            border: 1px solid white
+        }
+    }
+    .text-red {
+        color: red;
+        margin-top: 15px;
+    }
+}

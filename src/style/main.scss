@@ -8,17 +8,30 @@
 @import "price";
 @import "customer";
 @import "blog";
-@import "responsive";
 @import "details";
 @import "searchItem";
 @import 'location';
+@import 'contact';
+@import "responsive";
 
 body {
-  font-family: "UVFAmplify", serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: auto;
-
+  background-color: black;
+}
+section {
+  position: relative;
+}
+.section-bg {
+  position: absolute;
+  top: 15rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+  background-color: #2a2626;
 }
 img {
   image-rendering: optimizequality;
@@ -28,10 +41,10 @@ a {
   @include default;
   font-weight: weight(medium);
   color: $dark;
-  font-family: 'Kudryashev', serif;
+  font-family: "Poppins", sans-serif;
   @include transition;
   &:hover {
-    box-shadow: 0 0 4px 0 $text;
+    box-shadow: 0 0 4px 0 white;
   }
 }
 input,
@@ -57,14 +70,12 @@ section {
   }
 }
 p {
-  color: $blue;
+  color: white;
   opacity: 0.7;
   font-size: $md;
-  font-family: 'Kudryashev', serif;
+  font-family: "Poppins", sans-serif;
 }
-h2 {
-  font-family: "UVFAmplify";
-}
+
 .card {
   @include width(none, none, $white, none, 10px, 20px);
   background: $white;
@@ -78,8 +89,7 @@ h2 {
   @include pa_ma(0, $xl-4 0);
   h2 {
     font-size: 60px;
-    color: $heading;
-    font-family: "UVFAmplify";
+    color: white;
   }
 }
 .photos{
@@ -108,7 +118,7 @@ h2 {
       margin: 5px;
       &:hover {
         background: $white;
-        color: rgba($text, .5);
+        color: rgba(white, .5);
       }
     }
     .overlay {
@@ -150,9 +160,9 @@ h2 {
 footer {
   text-align: center;
   @include pa_ma($xl-2, $large 0 0 0);
-  background: $primary;
+  background: black;
   p {
-    color: $heading;
+    color: $white;
     font-weight: bold;
     font-size: 12px;
     letter-spacing: 3px;
@@ -177,10 +187,10 @@ footer {
       z-index: 99999;
     }
     .button {
-      @include positions(absolute, 6%, none, none, 0%, rgba(55,55,55, .5), none);
+      @include positions(absolute, 4.85%, none, none, 0%, rgba(55,55,55, .5), none);
       @include width(40px, 40px, none, white, 0px 0 0px 24px, none);
       z-index: 999999;
-      font-size: 18px;
+      font-size: 22px;
       transition: all .25s ease;
       &:hover {
         box-shadow: 0 0 3px white ;
@@ -188,7 +198,7 @@ footer {
     }
     &::after {
       content: "";
-      @include positions(absolute, -50px, none, 0, none, 100%, 105%);
+      @include positions(absolute, -65px, none, 0, none, 100%, 105%);
       background: rgba(#000000, 0.8); 
     }
   }

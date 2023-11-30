@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import {SlArrowLeft, SlArrowRight} from 'react-icons/sl'
 import Slider from "react-slick";
-import { products } from '../assets/data/data';
+import { ports } from '../assets/data/data';
 import Heading from '../common/Heading';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 function Story(props) {
-    const [data, setData] = useState(products)
+    const [data, setData] = useState(ports)
 
     const settings = {
         dots: true,
@@ -18,7 +17,7 @@ function Story(props) {
         slidesToScroll: 1,
         autoplay: true,
         speed: 500,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         pauseOnHover: true,
         cssEase: "linear",
     }
@@ -26,9 +25,10 @@ function Story(props) {
     return (
         <>
             <section className="storyslider" id='storyslider' data-aos="fade">
-                <Heading title='' desc='Mọi chuyện bắt đầu từ đây...'/>
+                <Heading title='Notable Works' desc='These are the starts...'/>
+                <div className="section-bg"></div>
                 <Slider {...settings}>
-                    {data.filter(item => item.id !== 7).slice(0,6).map((item) => (
+                    {data.filter(item => item.id !== 10).slice(0,9).map((item) => (
                         <div className="photo" key={item.id}>
                             <img src={item.cover} alt="" />
                         </div>
