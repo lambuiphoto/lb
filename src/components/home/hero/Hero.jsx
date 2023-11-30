@@ -17,18 +17,18 @@ function Hero({headerHeight}) {
         const hero3 = document.querySelector('.hero-heading-3')
         setTimeout(() => {
             hero.classList.add('show')
-        }, 1200);   
+        }, 1000);   
         setTimeout(() => {
             hero2.classList.add('show')
-        }, 2200);   
+        }, 2000);   
         setTimeout(() => {
             hero3.classList.add('show')
-        }, 2000);   
+        }, 2500);   
     }
 
-    document.addEventListener('click', () => {
-        document.getElementById('sanFran').play()
-    }, { once: true } )
+    // document.addEventListener('click', () => {
+    //     document.getElementById('sanFran').play()
+    // }, { once: true } )
 
     useLayoutEffect(() => {
         showHeroHeading()
@@ -54,9 +54,9 @@ function Hero({headerHeight}) {
                 <h1 className='hero-heading-2'>
                     <label htmlFor="">Bui</label>
                 </h1>
-                {/* <h1 className='hero-heading-3'>
-                    <label htmlFor="">Photographer & Editor</label>
-                </h1> */}
+                {/* <h1 className='hero-heading-3'> */}
+                    {/* <label htmlFor="">What's up?</label> */}
+                {/* </h1> */}
             </div>
         </section> 
       </>
