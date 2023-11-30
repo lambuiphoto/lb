@@ -26,9 +26,9 @@ function Hero({headerHeight}) {
         }, 2000);   
     }
 
-    // document.addEventListener('click', () => {
-    //     document.getElementById('mungJungYan').play()
-    // }, { once: true } )
+    document.addEventListener('click', () => {
+        document.getElementById('sanFran').play()
+    }, { once: true } )
 
     useLayoutEffect(() => {
         showHeroHeading()
@@ -44,9 +44,9 @@ function Hero({headerHeight}) {
             <video autoPlay muted loop data-aos="fade">
                 <source src='videos/bg2.mp4' type='video/mp4'/>
             </video>
-            {/* <audio controls autoPlay id='mungJungYan'>
-                <source src="music/mjyan.mp3" type="audio/mpeg" />
-            </audio> */}
+            <audio controls autoPlay id='sanFran'>
+                <source src="music/San Francisco - Midicronica.mp3" type="audio/mpeg" />
+            </audio>
             <div className="container hero-container">
                 <h1 className='hero-heading'>
                     <label htmlFor="">Lam</label>
