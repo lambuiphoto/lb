@@ -14,16 +14,16 @@ function Hero({headerHeight}) {
     const showHeroHeading = () => {
         const hero = document.querySelector('.hero-heading')
         const hero2 = document.querySelector('.hero-heading-2')
-        const hero3 = document.querySelector('.hero-heading-3')
+        // const hero3 = document.querySelector('.hero-heading-3')
         setTimeout(() => {
             hero.classList.add('show')
         }, 1000);   
         setTimeout(() => {
             hero2.classList.add('show')
         }, 2000);   
-        setTimeout(() => {
-            hero3.classList.add('show')
-        }, 2500);   
+        // setTimeout(() => {
+        //     hero3.classList.add('show')
+        // }, 2500);   
     }
 
     document.addEventListener('DOMContentLoaded', () => {
