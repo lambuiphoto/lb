@@ -1,12 +1,8 @@
 import React, { useEffect } from 'react';
 import CardMain from './hero/CardMain';
 import Hero from './hero/Hero';
-import About from './About';
 import Gallery from './product/Gallery';
-import Location from './Location';
 import Story from './Story';
-import WeddDetails from './WeddDetails';
-import Celebrate from './Celebrate';
 import Contact from './Contact';
 
 function Home({data}) {
