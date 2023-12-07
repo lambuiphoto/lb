@@ -15,9 +15,22 @@ function CardMain(props) {
                     </div>
                     <div
                         className="about-info-detail" data-aos="fade-right">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus explicabo libero, voluptatibus temporibus, eveniet doloribus voluptates aliquam incidunt molestiae dignissimos! Voluptatibus, ipsa fugit quidem ad vel vero culpa natus.</p>
+                        <p>Hi, I'm Lam.</p>
+
+                        <div>
+                            <p>My skills:</p>
+                            <div>
+                                <p><img src="" alt="" />Photoshop</p>    
+                                <p><img src="" alt="" />Premiere</p>    
+                                <p><img src="" alt="" />Blender</p>    
+                            </div>        
+                        </div>
                         <br />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fuga laudantium perspiciatis dicta nisi quam. Soluta ut quis maiores labore.</p>
+                        <p>With 6 years of experience in photography, <nbsp /> I provide different services, including:</p>
+                        <br />
+                        <p>- Retouching images.</p>
+                        <p>- Logo designing.</p>
+                        <p>- Blending 3D models.</p>
                         <br />
                         {/* <a href='#works' className='about-info-button'>View my work</a> */}
                     </div>
