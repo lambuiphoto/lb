@@ -1,6 +1,9 @@
 import React from 'react';
 import Heading from '../../common/Heading';
 import BomImg from '../../assets/images/more/home.jpg';
+import pts from '../../assets/images/pts.png';
+import premiere from '../../assets/images/premiere.png';
+import blender from '../../assets/images//blender.jpg';
 
 function CardMain(props) {
     return (
@@ -16,13 +19,13 @@ function CardMain(props) {
                     <div
                         className="about-info-detail" data-aos="fade-right">
                         <p>Hi, I'm Lam.</p>
-
-                        <div>
-                            <p>My skills:</p>
-                            <div>
-                                <p><img src="" alt="" />Photoshop</p>    
-                                <p><img src="" alt="" />Premiere</p>    
-                                <p><img src="" alt="" />Blender</p>    
+                        <br />
+                        <div className='about-skills'>
+                            <p>My skills include:</p>
+                            <div className='about-skills-container'>
+                                <div className='about-skills-wrapper'><img className="about-skills-img" src={pts} alt="" /><p>Photoshop</p></div>    
+                                <div className='about-skills-wrapper'><img className="about-skills-img" src={premiere} alt="" /><p>Premiere</p></div>    
+                                <div className='about-skills-wrapper'><img className="about-skills-img" src={blender} alt="" /><p>Blender</p></div>    
                             </div>        
                         </div>
                         <br />
@@ -32,7 +35,7 @@ function CardMain(props) {
                         <p>- Logo designing.</p>
                         <p>- Blending 3D models.</p>
                         <br />
-                        {/* <a href='#works' className='about-info-button'>View my work</a> */}
+                        <p>Take a look at my works and see if you like them :)</p>
                     </div>
                 </div>
             </section>

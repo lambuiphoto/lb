@@ -26,7 +26,26 @@
   .center-img-divider {
     margin: 50px 0;
   }
-  
+  .about-skills-container {
+    display: flex;
+    flex-direction: column;
+    ;
+  }
+  .about-skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0;
+    p {
+      margin-left: 5px;
+    }
+    
+  }
+  .about-skills-img {
+    max-width: 40px;
+    border-radius: 10px;
+  }
 }
 
 .card-story {
