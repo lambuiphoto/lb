@@ -22,6 +22,8 @@ function CardMain(props) {
                         <br />
                         <div className='about-skills'>
                             <p>My skills include:</p>
+                            <br />
+
                             <div className='about-skills-container'>
                                 <div className='about-skills-wrapper'><img className="about-skills-img" src={pts} alt="" /><p>Photoshop</p></div>    
                                 <div className='about-skills-wrapper'><img className="about-skills-img" src={premiere} alt="" /><p>Premiere</p></div>    
